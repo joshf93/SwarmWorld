@@ -16,9 +16,7 @@ SwarmWorld::SwarmWorld(std::shared_ptr<ParametersTable> _PT) : //Initializer
   void SwarmWorld::evaluateSolo(std::shared_ptr<Organism> org, int analyse, int visualize, int debug) {
       //Evaluate. Starts with a replicate loop.
       for(int z = 0; z < repeats; z++){
-
       }
-
   }
 
 
