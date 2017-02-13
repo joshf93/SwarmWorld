@@ -40,8 +40,8 @@ of organisms they despawn. If they manage to touch the colony, they steal a user
 selected amount of food, decreasing the colony's score.
 
 ## The Tradeoff
-  There are multiple tradeoffs that can be made in this world. A key one is the
-difference between guarding clones ("soldiers") and foraging clones ("foragers").
+  There are multiple tradeoffs that can be made in this world. The obvious one is
+the difference between guarding clones ("soldiers") and foraging clones ("foragers").
 The soldiers will need to stay near the colony and guard against predators, but
 the foragers will need to search far away from the colony to find food. Colony members
 which attempt to compromise will move too far from the base to effectively guard it,
