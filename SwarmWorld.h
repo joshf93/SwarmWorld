@@ -19,18 +19,37 @@ public:
 
     static std::shared_ptr<ParameterLink<int>> world_size_pl;
     static std::shared_ptr<ParameterLink<int>> repeats_pl;
+    static std::shared_ptr<ParameterLink<int>> updates_pl;
+    static std::shared_ptr<ParameterLink<int>> clones_pl;
+    static std::shared_ptr<ParameterLink<int>> amount_food_pl;
+    static std::shared_ptr<ParameterLink<int>> min_distance_pl;
 
     int repeats;
     int world_size;
+    int updates;
+    int clones;
+    int amount_food;
+    int min_distance;
 
     //Override AbstractWorld methods.
     virtual void evaluateSolo(std::shared_ptr<Organism> org, int analyse, int visualize, int debug) override;
     virtual int requiredInputs() override;
     virtual int requiredOutputs() override;
 
-
-
   };
+
+struct packet {
+  std::shared_ptr<Organism> clone;
+  int x;
+  int y;
+  bool carrying_food;
+};
+
+struct coordinate{
+  int x;
+  int y;
+}
+
 
 
 #endif
