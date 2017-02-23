@@ -45,10 +45,13 @@ struct packet {
   bool carrying_food;
 };
 
-struct coordinate{
-  int x;
-  int y;
-}
+struct cell{
+  int flag;
+  int num_orgs;
+  bool has_food;
+  bool has_nest;
+  bool is_hive;
+};
 
 
 

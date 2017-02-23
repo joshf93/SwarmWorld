@@ -70,19 +70,15 @@ SwarmWorld::SwarmWorld(std::shared_ptr<ParametersTable> _PT) : //Initializer
         }
 
 
-
-
-
-
-
-
-
-
         //Spawn them all at world_size//2
         std::vector<packet> swarm;
         for(auto m : swarm_orgs){
           swarm.push_back({m, world_size/2, world_size/2, 0});
         }
+
+        //Idea: instead of predators, you need mostly nonmotile cells to stick around
+        // and build nests. Colony fitness will depend on both nests built and food collected.
+        // Maybe look at preventing switching, but maybe not. Maybe user controlled?
 
 
         //Spawn food in the world.
